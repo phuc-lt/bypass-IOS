@@ -1,0 +1,13 @@
+Jailbreak using checkra1n for linux first
+open a terminal tab and paste:
+sudo apt install libusbmuxd-tool
+iproxy 2022 44
+NEW TERMINAL TAB NOW
+ssh root@localhost -p 2022
+pass: alpine
+mount -o rw,union,update /
+echo “” >> /.mount_rw
+mv /Applications/Setup.app/Setup /Applications/Setup.app/Setup.bak
+uicache -a
+killall backboardd
+DONE
